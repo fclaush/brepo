@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+
+  </head>
+  <body>
+  {% unless page.permalink == 'index.html' %}
+   {% include topnav_dark.html %}
+   {% endunless %}
+   {% if page.permalink == 'index.html' %}
+   {% include topnav_dark.html %}
+   {% endif %}
+    <h1>This is my DevToolBox</h1>
+
+    {% include foot.html %}
+  </body>
+</html>
