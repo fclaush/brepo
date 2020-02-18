@@ -1,15 +1,16 @@
 Atom
 link to
+https://atom.io
 
 Atom Packages
-link to
+link to https://atom.io/packages
 
 * atom-beautify
 * atom-ternjs
 * autoclose-html
 * emmet
 * csslint
-* pigments
+* pigments highlighting the colors in Atom
 * language-ejs
 * atom-html-preview
 * language-liquid

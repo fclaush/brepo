@@ -1,11 +1,19 @@
 .bg-color {
-  background-color: #effffb
+  background-color: #ffffff
 }
 
 .bg-header {
-  background-color: #4f98ca
+  background-color: #272343
 }
 
 .bg-footer {
-  background-color: #272727
+  background-color: #bae8e8
+}
+
+.navbar-dark {
+  background-color: #e3f6f5
+}
+
+.navbar-light {
+  background-color: #e3f6f5
 }
