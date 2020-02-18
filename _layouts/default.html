@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% include head.html %}
-
+    {% include header.html %}
   </head>
   <body>
-  {% unless page.permalink == 'index.html' %}
-   {% include topnav_dark.html %}
+  {% unless page == 'index.html' %}
+   {% include topnav.html %}
    {% endunless %}
-   {% if page.permalink == 'index.html' %}
-   {% include topnav_dark.html %}
+   {% if page == 'index.html' %}
+   {% include topnav.html %}
    {% endif %}
-    <h1>This is my DevToolBox</h1>
 
-    {% include foot.html %}
+
+    {% include footer.html %}
+    {% include scripts.html %}
   </body>
 </html>

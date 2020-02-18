@@ -8,3 +8,7 @@ csslint
 pigments
 language-ejs
 atom-html-preview
+language-liquid
+
+VS Code Extensions
+Azure Git
