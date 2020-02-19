@@ -1,16 +1,5 @@
 ---
 layout: page
-title: Design - Colors
+title: Design
 summary: Useful sources for a getting a good design
 ---
-
-
-
-## Fonts
-
-fontawesome
-
-## Icons
-
-
-## Pictures

@@ -1,3 +1,10 @@
+---
+layout: page
+title: Design - Colors
+summary: Useful sources for a getting a good design
+---
+
+
 colorhunt.co
 
 mdn named colors:
@@ -8,3 +15,7 @@ Header #272343
 Background #ffffff
 Sub-Header #e3f6f5
 Footer Background #bae8e8
+
+
+## MICROSOFT colors
+https://docs.microsoft.com/en-us/sharepoint/dev/design/themes-colors

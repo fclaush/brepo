@@ -1,3 +1,10 @@
+---
+layout: page
+title: Framework - Bootstrap
+summary:
+---
+
+
 ## Bootstrap Boilerplate
 <!doctype html>
 <html lang="en">
