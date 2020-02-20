@@ -1,11 +1,149 @@
 .bg-color {
-  background-color: #effffb
+  background-color: #ffffff
 }
 
 .bg-header {
-  background-color: #4f98ca
+  background-color: #272343
 }
 
 .bg-footer {
-  background-color: #272727
+  background-color: #bae8e8
+}
+
+.navbar-dark {
+  background-color: #e3f6f5
+}
+
+.navbar-light {
+  background-color: #e3f6f5
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #bae8e8;
+  border-width: 5px;
+  width: 5%;
+}
+
+
+.summary {
+    color: #808080;
+    border-left: 4px solid #e3f6f5;
+    font-size: 16px;
+    margin: 20px 0px 20px 0px;
+    padding-left: 10px;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6
+}
+
+.alert-success hr {
+    border-top-color: #c9e2b3
+}
+
+.alert-success .alert-link {
+    color: #2b542c
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1
+}
+
+.alert-info hr {
+    border-top-color: #a6e1ec
+}
+
+.alert-info .alert-link {
+    color: #245269
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc
+}
+
+.alert-warning hr {
+    border-top-color: #f7e1b5
+}
+
+.alert-warning .alert-link {
+    color: #66512c
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1
+}
+
+.alert-danger hr {
+    border-top-color: #e4b9c0
+}
+
+.alert-danger .alert-link {
+    color: #843534
 }
