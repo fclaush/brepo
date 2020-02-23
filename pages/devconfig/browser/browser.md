@@ -6,6 +6,8 @@ summary: Brower selections and settings for a smart workflow and development exp
 
 ## CHROME
 
+Chrome Plugin
+* Pesticide, CSS Debugger shows the boxes in the Browser
 
 ## FIREFOX
 

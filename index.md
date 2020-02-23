@@ -7,7 +7,8 @@ permalink: index.html
 <section>
   <div class="container">
 
-<p>My Dev Tool Box</p>
+<h1>My Dev Tool Box</h1>
+<p>Everything I need quick access to.</p>
 
   </div>
 </section>
