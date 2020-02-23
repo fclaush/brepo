@@ -25,3 +25,10 @@ hr {
     margin: 20px 0px 20px 0px;
     padding-left: 10px;
 }
+
+## Round Image
+Border radius 100% rounds the image to circular.
+
+circular {
+  border-radius: 100%
+}
