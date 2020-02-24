@@ -1,0 +1,102 @@
+body {
+    min-height: 100%;
+    font-family: 'HMgroupAmpersand', sans-serif, Helvetica, Arial !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, a {
+    font-family: 'Questrial', sans-serif, Helvetica, Arial !important;
+    font-style: normal;
+}
+
+.h1-underconstruction {
+    color: #CC071E;
+    font-family: 'HMGroupAmpersand', sans-serif, Helvetica, Arial !important;
+    font-size: 24px;
+    padding: 14px 14px;
+    border: 0px solid lightgray;
+}
+
+.btn-danger {
+    color: #ffffff;
+    background-color: #CC071E;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 8px 12px;
+    transition: all 0.2s ease;
+}
+
+.btn-danger:hover {
+    color: #ffffff;
+    background-color: #910717;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 8px 12px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 28px rgba(61, 61, 61, 0.1), 0 10px 10px rgba(61, 61, 61, 0.1);
+}
+
+.carousel-inner {
+    padding: 0 5px 25px 5px;
+}
+
+.item{
+    text-align: center;
+    }
+    .carousel-inner img{
+    display: inline-block  !important;
+    }
+
+.carousel-control {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5%;
+    font-size: 20px;
+    color: #eeeeee;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.3);
+    opacity: 1;
+}
+
+.carousel-control:hover{
+    color: #cacaca;
+}
+
+.carousel-control:focus{
+    color: #eeeeee;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control.right {
+    right: -50px;
+}
+
+.carousel-control.left {
+    left: -50px;
+}
+
+.carousel-indicators {
+    bottom: -25px;
+}
+
+.carousel-indicators li {
+    width: 30px;
+    height: 6px;
+    margin: 0px !important;
+    border: 0px solid #767676;
+    background-color: #767676;
+    border-radius: 3px;
+}
+
+.carousel-indicators .active {
+    width: 30px;
+    height: 6px;
+    margin: 1px 0 0 0;
+    border: 0px solid;
+    background-color: #CC071E;
+}
