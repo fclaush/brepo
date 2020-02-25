@@ -32,3 +32,8 @@ Border radius 100% rounds the image to circular.
 circular {
   border-radius: 100%
 }
+
+Margin CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+
+![Margin Center](images/center-margin.png)
