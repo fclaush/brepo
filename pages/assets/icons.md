@@ -8,3 +8,5 @@ summary: VS Code
 
 Integration
 Can be also snippets
+
+fontawesome
