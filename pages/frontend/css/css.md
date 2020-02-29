@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Code Snippets: CSS
+title: Code Snippets CSS
 summary:
 ---
 

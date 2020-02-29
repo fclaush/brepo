@@ -1,0 +1,32 @@
+I"‰<div class="alert alert-light" role="alert">
+  This is a light alertâ€”check it out!
+</div>
+
+<p>hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #bae8e8;
+  border-width: 5px;
+  width: 5%;
+}</p>
+
+<p>.summary {
+    color: #808080;
+    border-left: 4px solid #e3f6f5;
+    font-size: 16px;
+    margin: 20px 0px 20px 0px;
+    padding-left: 10px;
+}</p>
+
+<h2 id="round-image">Round Image</h2>
+<p>Border radius 100% rounds the image to circular.</p>
+
+<p>circular {
+  border-radius: 100%
+}</p>
+
+<p>Margin CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/margin</p>
+
+<p><img src="images/center-margin.png" alt="Margin Center" /></p>
+:ET

@@ -1,0 +1,33 @@
+I"“<h2 id="sources">SOURCES</h2>
+
+<h2 id="atom-packages">ATOM PACKAGES</h2>
+
+<p>Atom
+link to
+https://atom.io</p>
+
+<p>Atom Packages
+link to https://atom.io/packages</p>
+
+<ul>
+  <li>atom-beautify</li>
+  <li>atom-ternjs</li>
+  <li>autoclose-html</li>
+  <li>emmet</li>
+  <li>csslint</li>
+  <li>pigments highlighting the colors in Atom</li>
+  <li>language-ejs</li>
+  <li>atom-html-preview</li>
+  <li>language-liquid</li>
+  <li>comment</li>
+  <li>v-bootstrap4</li>
+</ul>
+
+<p>VS Code Extensions
+Azure Git</p>
+
+<h2 id="further-settings">FURTHER settings</h2>
+
+<p><button type="button" name="button">Atom</button>
+<button type="button" name="button">VS Code</button></p>
+:ET
