@@ -2,16 +2,9 @@
 <html lang="en">
   <head>
     {% include header.html %}
-
   </head>
   <body>
-  {% unless page == 'index.html' %}
    {% include topnavpage.html %}
-   {% endunless %}
-   {% if page == 'index.html' %}
-   {% include topnav.html %}
-   {% endif %}
-   {% include subnav.html %}
-
-
+   {% include topnavpage.html %}
+ {% include footer.html %}
 </html>

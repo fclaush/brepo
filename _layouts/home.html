@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    {% include header.html %}
-    <title></title>
-  </head>
-  <body>
 
-    {% include topnav.html %}
+<head>
+  <meta charset="utf-8">
+  {% include header.html %}
+  <title>My DevToolBox</title>
+</head>
 
-    {{ content }}
+<body>
+  {% include topnav.html %}
+<section id="home-bg">
 
-    {% include footer.html %}
-    {% include scripts.html %}
-  </body>
+  {{ content }}
+
+</section>
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+
 </html>
