@@ -1,25 +1,17 @@
----
-layout: home
-permalink: index.html
----
-
-<section id="pitch-section">
+I"o	<section id="pitch-section">
   <div class="container">
     <div class="row">
 
       <div class="col-12 col-sm-12 col-md-8 col-lg-9">
-        <h1 class="title">.brepo    { <br> development & knowledge repository: for my incable brain; <br>}</h1>
-
+        <h1 class="title">.brepo    { <br /> development &amp; knowledge repository: for my incable brain; <br />}</h1>
+        <div class="pitch">
+          <p>Ideas can rise very quickly and require space.<br />
+            Won't forget the old ones. Always accessible - here in one place.</p>
+        </div>
       </div>
 
       <div class="col-0 col-sm-0 col-md-4 col-lg-3">
-        <img class="pitch-img" src="images/brepo-img-2.jpg" alt="Small Pine Brepo Tree">
-      </div>
-    </div>
-    <div class="row">
-      <div class="pitch">
-        <p>Ideas can rise very quickly and require space.<br>
-          Won't forget the old ones. Always accessible - here in one place.</p>
+        <img class="pitch-img" src="images/brepo-img-2.jpg" alt="Small Pine Brepo Tree" />
       </div>
     </div>
   </div>
@@ -70,7 +62,7 @@ permalink: index.html
 
     <div class="area-box col-lg-4 col-md-6">
       <i class="fas fa-toolbox fa-2x area-icon"></i>
-      <h3 class="h3-area">Software & Tools</h3>
+      <h3 class="h3-area">Software &amp; Tools</h3>
       <p class="p-area">Atom, VS Code, Github, Photoshop Elements, Bootstrap Studio. For now. </p>
     </div>
 
@@ -78,3 +70,4 @@ permalink: index.html
 
 
 </section>
+:ET

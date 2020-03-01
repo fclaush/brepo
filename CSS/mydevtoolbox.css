@@ -53,6 +53,7 @@ a {
   background-color: #e3f6f5;
   padding: 7%;
   background-image: url();
+  text-align: center;
 }
 
 .title {
@@ -60,19 +61,22 @@ a {
   font-size: 3rem;
   font-weight: 600;
   line-height: 1.2;
-  color: #272343
+  color: #272343;
+  text-align: left;
 }
 
 .pitch {
   color: #555;
   font-size: 1.2rem;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .pitch-img {
   width: 250px;
   height: auto;
-  text-align: center;
+  text-align: center !important;
+  vertical-align: middle !important;
   border-radius: 100%;
 }
 
