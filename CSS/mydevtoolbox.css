@@ -9,7 +9,8 @@ a {
 
 .navbar {
   padding: 10px;
-}
+  vertical-align: middle;
+  }
 
 .navbar-dark {
   background-color: #272343;
@@ -23,13 +24,15 @@ a {
 
 .brand-brain {
   color: #e3f6f5 !important;
-  padding: 5px;
+  padding-top: 5px;
 }
 
 .navbar-brand-h3 {
   font-family: "Roboto";
   font-size: 1.2rem;
   color: #e3f6f5 !important;
+  vertical-align: middle;
+  margin-bottom: 0;
 }
 
 .navbar-toggler {
@@ -47,25 +50,30 @@ a {
 }
 
 #pitch-section {
+  background-color: #e3f6f5;
   padding: 7%;
   background-image: url();
 }
 
 .title {
-  font-family: "Montserrat-Black";
+  font-family: "Questrial";
   font-size: 3rem;
   font-weight: 600;
-  line-height: 1.5;
-  color: #bae8e8
+  line-height: 1.2;
+  color: #272343
 }
 
 .pitch {
-  color: #272343;
+  color: #555;
+  font-size: 1.2rem;
   margin-top: 1rem;
 }
 
 .pitch-img {
-  width: 50px
+  width: 250px;
+  height: auto;
+  text-align: center;
+  border-radius: 100%;
 }
 
 #areas {
@@ -74,13 +82,13 @@ a {
 
 .area-box {
   text-align: center;
-  padding: 1rem;
   text-decoration: none;
+  margin-bottom: 1.7rem;
 }
 
 .area-icon {
   color: #272343;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   text-decoration: none;
 }
 
@@ -89,7 +97,7 @@ a {
   color: #272343;
   font-size: 1.8rem;
   font-weight: 600;
-  line-height: 0.5;
+  line-height: 1;
 }
 
 .h3-area:hover {

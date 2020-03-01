@@ -7,16 +7,16 @@ permalink: index.html
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-6">
-        <h1 class="title">Brepo - development tools & knowledge repository for my incable brain</h1>
+      <div class="col-12 col-sm-12 col-md-8 col-lg-9">
+        <h1 class="title">.brepo    { <br> development tools & knowledge repository: for my incable brain; <br>}</h1>
         <div class="pitch">
           <p>Ideas can rise very quickly and require space.<br>
             Won't forget the old. Always accessible - here in one place.</p>
         </div>
       </div>
 
-      <div class="col-lg-6 pitch-img">
-        <img src="images/brepo-img.jpg" alt="Small Pine Tree">
+      <div class="col-0 col-sm-0 col-md-4 col-lg-3">
+        <img class="pitch-img" src="images/brepo-img-2.jpg" alt="Small Pine Brepo Tree">
       </div>
     </div>
   </div>
