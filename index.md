@@ -8,7 +8,7 @@ permalink: index.html
     <div class="row">
 
       <div class="col-12 col-sm-12 col-md-8 col-lg-9">
-        <h1 class="title">.brepo    { <br> development & knowledge repository: for my incable brain; <br>}</h1>
+        <h1 class="title">.brepo    { <br> development & knowledge repository: for my incapable brain; <br>}</h1>
 
       </div>
 
