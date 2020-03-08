@@ -1,0 +1,25 @@
+---
+layout: page
+title: Markdown - Code Snippets
+summary: A bunch of code snippets that I need
+---
+
+
+> [![homepage](http://commonmark.org/help/images/favicon.png)](http://commonmark.org "Redirect to homepage")
+
+Which is doing these steps:
+
+Embedding an image called favicon.png in the document.
+Giving the image the alternative text “homepage”.
+Putting the complete Markdown image tag inside of a Markdown link (in the part where the link’s visible text normally goes).
+Giving the outer link the URL http://commonmark.org, so that when someone clicks on the image, it will take them to that URL.
+Giving the outer link the title “Redirect to homepage” (which appears when hovering with your mouse over the link in most desktop operating systems).
+If you think this syntax is hard to read, that’s because it is. And to be honest, I think the more explicit HTML rendering of it is clearer.
+
+´´´
+<p>
+  <a href="http://commonmark.org" title="Redirect to homepage">
+    <img src="http://commonmark.org/help/images/favicon.png" alt="homepage" />
+  </a>
+</p>
+´´´
