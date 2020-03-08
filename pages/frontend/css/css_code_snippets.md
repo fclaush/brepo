@@ -17,7 +17,7 @@ hr {
   width: 5%;
 }
 
-
+´´´
 .summary {
     color: #808080;
     border-left: 4px solid #e3f6f5;
@@ -25,6 +25,7 @@ hr {
     margin: 20px 0px 20px 0px;
     padding-left: 10px;
 }
+´´´
 
 ## Round Image
 Border radius 100% rounds the image to circular.
