@@ -4,6 +4,9 @@ layout: page
 summary: "Many programmers..."
 ---
 
+> Credits to Angela Yu, The App Brewery [Udemy Course, Web Development](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
+
+
 ## Story about FizzBuzz
 
 Now one of the most common questions that you're going to encounter on any programming interview is something called FizzBuzz, and it's a really simple problem and this is usually how they would define it.
@@ -55,6 +58,81 @@ else {
 
 count++;
 //comment in JS
+
+     console.log(output);
+}
+```
+
+
+## While Loop
+
+```
+var output = [];
+var count = 1;
+
+
+function fizzBuzz() {
+
+    while (count <= 100) {
+
+if (count % 3 === 0 && count % 5 === 0) {
+    output.push("FizzBuzz");
+}
+
+else if (count % 3 === 0) {
+    output.push("Fizz");
+}
+else if (count % 5 === 0) {
+    output.push("Buzz");
+}
+else {
+    output.push(count);
+}
+
+count++;
+//comment in JS
+
+}
+
+     console.log(output);
+}
+```
+
+## For
+
+```
+For (var i=1;i<2;i++) {
+  console.log (i);
+}
+```
+
+```
+var output = [];
+var count = 1;
+
+
+function fizzBuzz() {
+
+    for (var count = 1; count <= 100; count++) {
+
+if (count % 3 === 0 && count % 5 === 0) {
+    output.push("FizzBuzz");
+}
+
+else if (count % 3 === 0) {
+    output.push("Fizz");
+}
+else if (count % 5 === 0) {
+    output.push("Buzz");
+}
+else {
+    output.push(count);
+}
+
+
+//comment in JS
+
+}
 
      console.log(output);
 }
