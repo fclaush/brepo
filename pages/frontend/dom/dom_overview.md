@@ -8,3 +8,7 @@ summary:
 
 
 [Be careful with double quotation.](images/js_double_quotation.png)
+
+```
+document.getElementsByTagName("li");
+```
