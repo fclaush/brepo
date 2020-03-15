@@ -4,7 +4,7 @@ layout: page
 summary: "Building a Drumkit on a website"
 ---
 
-## DrumKit
+## DrumKit - Adding Event Listener To A Button
 
 > Credits to Angela Yu, The App Brewery [Udemy Course, Web Development](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 
@@ -69,21 +69,32 @@ listens
 
 for when it gets clicked, and when it does, to call this function called handleClick.
 
+```
+function handleClick () {
+  alert("Hello!");  
+}
+```
+
+
 So first of course we'll need to tap into the document and then we'll querySelector for our button.
 
-Now I'm only targeting the first button here just so that we can see what's going on before we start
+Now I'm only targeting the first button here just so that we can see what's going on before we start trying to do this to all the buttons.
 
-trying to do this to all the buttons.
+```
+document.querySelector ("button")
+```
 
 All right. So now that I've selected my first button, the next step is to add an event listener, and the
 
 method for it is pretty much what it sounds like. It’s addEventListener.
 
-Now if we take a look inside the documentation, as you always should when you’re using a new method or a new
+```
+document.querySelector("button").addEventListener
+```
 
-property, then you can see that the method addEventListener sets up a function to be called whenever
+Now if we take a look inside the documentation, as you always should when you’re using a new method or a new property, then you can see that the method addEventListener sets up a function to be called whenever the specified event is delivered to the target.
 
-the specified event is delivered to the target.
+[MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
 So the target in our case is the object that we're calling the method addEventListener on, which in
 
@@ -93,17 +104,24 @@ addEventListener. And this event listener usually has two parameters.
 
 The first one is the type which is a case sensitive string representing the event type to listen to.
 
+> ###### Syntax
+target.addEventListener(type, listener [, options]);
+target.addEventListener(type, listener [, useCapture]);
+target.addEventListener(type, listener [, useCapture, wantsUntrusted  ]); // Gecko/Mozilla only
+
+
 And if you click on this link you can see all of the different event types that you can listen to.
+
+[Event Listener](https://developer.mozilla.org/en-US/docs/Web/Events)
+
 
 But in our case we're just looking for something really really simple which is simply the click event
 
-which means that the mouse clicked on the button.
+which means that the mouse clicked on the button. So let's go ahead and add that click event. And remember we have to add it as a string. So that's the first parameter done.
 
-So let's go ahead and add that click event.
-
-And remember we have to add it as a string.
-
-So that's the first parameter done.
+```
+document.querySelector("button").addEventListener("Click", )
+```
 
 Now what about the second parameter?
 
@@ -113,9 +131,16 @@ and this usually is a Javascript function that's going to be called when that cl
 
 So, in our case, we're going to call our function handleClick.
 
+```
+document.querySelector("button").addEventListener("Click", handleClick )
+```
+
+
 So what this line of code does is it finds the first button in our document, which is the w drum button,
 
 and then it adds a event listener to that button so that it listens for clicks that happen on that button.
+
+![Index.html - First Button](/images/js_drum_kit_1st_btn.png)
 
 And when it does it runs the code inside the function handleClick, and that should send us an alert
 
@@ -124,6 +149,15 @@ saying "I got clicked!".
 So let's try it out. Let's refresh our web site, and if you remember I only added that event listener to
 
 the first button.
+
+```
+document.querySelector("button").addEventListener("click", handleClick);
+
+function handleClick () {
+  alert("I got Clicked!");
+}
+```
+
 
 So if we click any of these other buttons still nothing will happen.
 
@@ -135,31 +169,21 @@ to get it to call a method every single time
 
 it does get clicked.
 
-So this is getting us closer to our goal, right? Now
 
-event listeners are a little bit like when you're going to a party and you're asking your dad to pick you
-
-up.
-
-You're giving him an event listener by telling him to wait for a message from you that tells him to
-
-pick you up.
-
-And by doing this you're essentially adding an event listener to your dad.
-
-Now as the evening moves on and you're getting kind of bored with the party you decide to message your
-
-dad, and when he receives that message he will carry out a function, namely picking you up, right?
-
-That's what dads are for I guess.
-
-So this is exactly the same thing that we're doing with our code. Now
-
-the keen eyed amongst you might have noticed that the way that we're calling our function is a little
+Now the keen eyed amongst you might have noticed that the way that we're calling our function is a little
 
 bit different from usual, namely we normally call or function with a set of parentheses,
 
 but in this case we're not using it.
+
+```
+document.querySelector("button").addEventListener("click", handleClick());
+
+function handleClick () {
+  alert("I got Clicked!");
+}
+```
+
 
 Now why is that?
 
@@ -203,6 +227,13 @@ The most common way is, instead of adding a function name here that calls the fu
 
 most people will write this code as simply an anonymous function.
 
+```
+document.querySelector("button").addEventListener("click", function () {
+  alert("I got Clicked!");
+});
+```
+
+
 So anonymous functions look pretty much exactly the same as a normal function but they're just anonymous.
 
 They don't have a name.
@@ -219,49 +250,26 @@ And inside the parentheses of this anonymous function are all the instructions t
 
 when that button detects the click.
 
-All right so this is going to take a little bit of wrapping your head around,
+#### 5 Buttons
 
-but I really want to challenge you with a small task.
-
-And the problem we have to address is at the moment we're only adding an event listener to our first
-
-button, because we're using querySelector, which selects the first button in our index.html.
-
-Now I want you to change this code or write some new code so that we're adding an event listener to
-
-every single button so that no matter which button you click on you'll always get this alert that says
-
-"I got clicked!".
-
-Now there's a really really roundabout way of doing this,
-
-and there's a better way.
-
-And I want you to figure out what is the better way.
-
-And as a hint it shouldn't take you more than five lines of code to do this.
-
-So pause the video now and see if you can figure out a way of adding the event listener that does exactly
-
-the same thing as what we've got here,
-
-but to all of the buttons.
-
-All right.
-
-So how did that go?
-
-Well, in order to solve this challenge successfully, you would have to recall that previously in our Javascript
-
-lessons we learned about loops. And loops are a great way of preventing ourselves from doing really tedious
+Loops are a great way of preventing ourselves from doing really tedious
 
 work, because you might realize that you can say something like querySelectorAll for button, and then
 
-you can say, for the first button add event listener, then for the second button add event listener, for
+you can say, for the first button add event listener,
+```
+document.querySelector("button")[0].addEventListener("click", function () {
+  alert("I got Clicked!");
+});
+```
 
-this.
-
-And on and on.
+then for the second button add event listener,
+```
+document.querySelector("button")[1].addEventListener("click", function () {
+  alert("I got Clicked!");
+});
+```
+and so on.
 
 And there's seven buttons, so that's a lot of lines of code, which we are not interested in doing, right?
 
@@ -279,6 +287,14 @@ that number 7 by simply saying document.querySelectorAll, and we're going to sel
 
 that have the tag 'button'.
 
+```
+for (var i = 0;   i< document.querySelectorAll("button"))
+
+document.querySelector("button")[].addEventListener("click", function () {
+  alert("I got Clicked!");
+});
+```
+
 Now this is a little bit dangerous because say if later on we decide to add another button say in our
 
 footer, like a button that points towards our Twitter or our Facebook or whatever it may be,
@@ -291,6 +307,14 @@ So we should really be a little bit more specific with our selector. And if we t
 
 of our buttons have a class of drum applied to it.
 
+```
+for (var i = 0; i< document.querySelectorAll(".drum"))
+
+document.querySelector("button")[].addEventListener("click", function () {
+  alert("I got Clicked!");
+});
+```
+
 So instead of just targeting button elements we can be more specific and more safe by saying target
 
 all of the elements that have a selector of .drum.
@@ -301,7 +325,13 @@ So now we're looking through our document querying for all of the elements that 
 
 and then we're going to call .length on it in order to see how many elements we've got that have
 
-a class of drum. And that number will help us determine when we should stop looping, because we essentially
+a class of drum.
+
+```
+for (var i = 0; i< document.querySelectorAll(".drum").length)
+```
+
+And that number will help us determine when we should stop looping, because we essentially
 
 just want to loop through all of our buttons and add event listeners.
 
@@ -313,11 +343,22 @@ Now you can also separate this line out if you wish,
 
 and if it makes it clearer to you, by creating a new variable
 
-saying numberOfDrumButtons, and you can set it equal to this, and then you can use that inside the
+saying numberOfDrumButtons,
+
+```
+var numberOfDrumButtons = document.querySelectorAll(".drum").length
+```
+
+and you can set it equal to this, and then you can use that inside the
 
 for loop, by saying start i from zero and end
 
 when i is no longer less than the number of drum buttons.
+
+```
+for (var i = 0; i<numberOfDrumButtons; )
+```
+
 
 And finally we're going to increment i by one each time.
 
