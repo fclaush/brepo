@@ -14,7 +14,7 @@ Set up the Project with the files index.html, the index.js, and the styles.css o
 
 inside Atom,
 
-link up the index.js with our index.html and test it using an alert.
+## Link up the index.js with the index.html
 
 In index.html:
 
@@ -22,7 +22,7 @@ In index.html:
 <script src="index.js" charset="utf-8"></script>
 ```
 
-In index.js:
+In index.js and test it using an alert.
 
 ```
 alert("Hello!");
@@ -31,29 +31,21 @@ alert("Hello!");
 
 So as we did before we always put our scripts right at the end just before the body closing tag.
 
-And we use the script with a source. So the source is of course index.js, and hit save, and then let's
+```
+</body>
+```
 
-just give it a test as always with a simple alert just to make sure that everything is linked up properly
 
-and it's working.
 
-And so now inside our index.html we've got a link to our stylesheet,
-
-we’ve got a script that points to our index.js, and we're ready to begin.
-
-Now, at the moment, even though I have all of these buttons on my web site, nothing actually happens when
-
-I press on them,
-
-right?
-
-Absolutely nothing happens.
+## Event Listener
 
 Now in order to start registering the button clicks, I need to add what we call an event listener to
 
 it,
 
 so the buttons will let me know when a user clicks on it.
+
+## Create Function
 
 Now inside our index.js, let's first create a function that does something when the button gets
 
@@ -75,6 +67,7 @@ function handleClick () {
 }
 ```
 
+## Document with Query Selector
 
 So first of course we'll need to tap into the document and then we'll querySelector for our button.
 
@@ -115,7 +108,7 @@ And if you click on this link you can see all of the different event types that 
 [Event Listener](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 
-But in our case we're just looking for something really really simple which is simply the click event
+But in our case we're just looking for something really simple which is click event
 
 which means that the mouse clicked on the button. So let's go ahead and add that click event. And remember we have to add it as a string. So that's the first parameter done.
 
@@ -123,9 +116,7 @@ which means that the mouse clicked on the button. So let's go ahead and add that
 document.querySelector("button").addEventListener("Click", )
 ```
 
-Now what about the second parameter?
-
-Well, the second parameter is a listener,
+The second parameter is a listener,
 
 and this usually is a Javascript function that's going to be called when that click event gets detected.
 
@@ -258,14 +249,14 @@ work, because you might realize that you can say something like querySelectorAll
 
 you can say, for the first button add event listener,
 ```
-document.querySelector("button")[0].addEventListener("click", function () {
+document.querySelectorAll("button")[0].addEventListener("click", function () {
   alert("I got Clicked!");
 });
 ```
 
 then for the second button add event listener,
 ```
-document.querySelector("button")[1].addEventListener("click", function () {
+document.querySelectorAll("button")[1].addEventListener("click", function () {
   alert("I got Clicked!");
 });
 ```
@@ -288,9 +279,9 @@ that number 7 by simply saying document.querySelectorAll, and we're going to sel
 that have the tag 'button'.
 
 ```
-for (var i = 0;   i< document.querySelectorAll("button"))
+for (var i = 0; i<document.querySelectorAll("button"))
 
-document.querySelector("button")[].addEventListener("click", function () {
+document.querySelectorAll("button")[].addEventListener("click", function () {
   alert("I got Clicked!");
 });
 ```
@@ -328,7 +319,7 @@ and then we're going to call .length on it in order to see how many elements we'
 a class of drum.
 
 ```
-for (var i = 0; i< document.querySelectorAll(".drum").length)
+for (var i = 0; i< document.querySelectorAll(".drum").length;)
 ```
 
 And that number will help us determine when we should stop looping, because we essentially
@@ -346,7 +337,7 @@ and if it makes it clearer to you, by creating a new variable
 saying numberOfDrumButtons,
 
 ```
-var numberOfDrumButtons = document.querySelectorAll(".drum").length
+var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 ```
 
 and you can set it equal to this, and then you can use that inside the
@@ -362,6 +353,10 @@ for (var i = 0; i<numberOfDrumButtons; )
 
 And finally we're going to increment i by one each time.
 
+```
+for (var i = 0; i<numberOfDrumButtons;i++)
+```
+
 So now inside our for loop we're going to use this part of our code,
 
 right?
@@ -369,6 +364,20 @@ right?
 So we're going to paste that into here, and maybe give it a little bit of space from everything else so
 
 you can see more clearly what's going on.
+
+```
+var numberOfDrumButtons = document.querySelectorAll(".drum").length;
+
+for (var i = 0; i<numberOfDrumButtons; i++) {
+
+  document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+    alert("I got Clicked!");
+
+  });
+}
+```
+
+
 
 And in this case we're looking through our document, we're querying for all of the selectors that have
 
@@ -395,21 +404,3 @@ So now if we hit save and we refresh our web site, then you can see that no matt
 on, we're always going to get the alert "I got clicked!". So that event listener has been added to all of
 
 our buttons by using a for loop.
-
-Now if you find it easier in this case you can also use a while loop,
-
-so while i is less than the number of drum buttons, or whichever way you found to be most effective.
-
-Now what I didn't want you to do was to write out this code seven times changing the i from 0 through
-
-to 7.
-
-So if you had any problems with this challenge then I strongly urge you to take a look back at the lessons
-
-in the Javascript module,
-
-where we went over this concept of loops, and maybe repeat some of the exercises and challenges so that you're
-
-fully comfortable with this before we carry on.
-
-But once you're ready we're going to get started playing some sounds.
