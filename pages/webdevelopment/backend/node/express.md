@@ -5,6 +5,8 @@ layout: page
 
 ## Setting Up Express Project
 
+Starting and setting up the Express Server
+
 ```
 Franks-MacBook-Pro:Documents fclaush$ mkdir my-express-server
 Franks-MacBook-Pro:Documents fclaush$ cd my-express-server
@@ -49,4 +51,69 @@ About to write to /Users/fclaush/Documents/my-express-server/package.json:
 Is this OK? (yes)
 Franks-MacBook-Pro:my-express-server fclaush$ atom .
 Franks-MacBook-Pro:my-express-server fclaush$ npm install express
+```
+
+Franks-MacBook-Pro:my-express-server fclaush$ pwd
+/Users/fclaush/Documents/my-express-server
+Franks-MacBook-Pro:my-express-server fclaush$ ls
+node_modules            package-lock.json       package.json            server.js
+Franks-MacBook-Pro:my-express-server fclaush$ open server.js
+
+## server.js
+
+```
+const express = require("express");
+const app = express();
+
+app.listen(3000, function(){
+  console.log("Server started on port 3000");
+  });
+```
+
+## Start Node Server
+
+Franks-MacBook-Pro:my-express-server fclaush$ node server.js
+Server started on port 3000
+
+```
+const express = require("express");
+const app = express();
+
+app.get("/", function(request, response){
+  console.log(request);
+})
+
+app.listen(3000, function(){
+  console.log("Server started on port 3000");
+  });
+  ```
+
+```
+  const express = require("express");
+const app = express();
+
+app.get("/", function(req, res){
+  res.send("<h1>hello world!</h1>");
+});
+
+app.listen(3000, function(){
+  console.log("Server started on port 3000");
+  });
+  ```
+
+  ## Nodemon
+  Auto restart server
+
+  https://nodemon.io/
+
+  ```
+  + nodemon@2.0.2
+added 106 packages from 53 contributors in 7.541s
+Franks-MacBook-Pro:my-express-server fclaush$ nodemon server.js
+[nodemon] 2.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Server started on port 3000
 ```
