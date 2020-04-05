@@ -11,6 +11,7 @@ summary:
 ## Combining Values
 
 > ThisItem.Employee & " - " &ThisItem.Department
+> ThisItem.FirstName & " " & LastName
 
 ## Edit Screen
 
@@ -76,3 +77,31 @@ Button Function, to check password, set variable, reset the password text field,
 
 Column "Link" with URL, add function to icon.
 > Launch(Link)
+
+## Radio Button Selection
+> ["Fun","Hate","Chill"]
+
+> RadioState.Selected.Value
+
+## Edit vs New Form
+[Edit vs New Form](images\edit_new_if_text.png)
+Intro to Canvas Apps > Create an App from a Template > Quick Changes to a Form
+> If(EditForm1.Mode = FormMode.New, "Create a record", "Edit " & BrowseGallery1.Selected.FirstName)
+
+## Currecy & Number Format
+> Text(Value(ThisItem.Amount),"[$-en-GB]$#,###.00")
+
+## Sort a Gallery
+Replace value "amount" by value "FirstName" to sort by first name.
+[Sort Gallery By](images\sort_gallery_by.png)
+
+Sort by First Name first and Last Name second.
+> SortByColumns(Search([@Purchases], TextSearchBox1.Text, "Amount","FirstName","LastName"), "FirstName", If(SortDescending1, Descending, Ascending),"LastName",Ascending)
+
+## SharePoint Forms
+
+Show on View DropdownEmployee
+> If(SharePointForm1.Mode = FormMode.View,true,false)
+
+[Make other cards visibility dependend on first one](images\pa_card_visible.png)
+
